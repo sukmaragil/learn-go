@@ -27,11 +27,13 @@ func greetingPrefix(language string) (prefix string) {
 		prefix = spanishHelloPrefix
 	case bahasa:
 		prefix = bahasaHelloPrefix
+	default:
+		prefix = englishHelloPrefix
 	}
 
 	return
 }
 
 func main() {
-	fmt.Println(Hello("World", ""))
+	fmt.Println(Hello("Chris", ""))
 }
